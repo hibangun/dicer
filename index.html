@@ -7,17 +7,26 @@
   <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet">
 </head>
 <body>
-  <h1>Disher Game!</h1>
+  <h1>Dicer Game!</h1>
   <div class="generate-player-container">
-    <a href="#" class="generate-player-btn">Generate Players</a>
+    <a href="#" class="generate-player-btn">GENERATE PLAYER</a>
+    <a href="#" class="new-game-btn none">NEW GAME</a>
+    <a href="#" class="roll-player-btn unclick none">ROLL IT</a>
     <ul class="players"></ul>
-    <a href="#" class="start-dishing-btn none">PLAY</a>
+    <a href="#" class="start-dicing-btn none">MOVE IT</a>
   </div>
 
-  <div class="dishing-container none">
-    <h2>THE WINNER IS</h2>
+  <div class="dicing-container none">
     <h3 class="the-winner"></h3>
+    <ul class="players-score"></ul>
+  </div>
+
+  <div class="winner-container none">
+    <h3>CONGRATULATION!</h3>
+    <h3>👑</h3>
+    <ul class="players-winner"></ul>
   </div>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4/lodash.min.js"></script>
 </body>
 </html>
