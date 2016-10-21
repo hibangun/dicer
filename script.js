@@ -108,8 +108,6 @@ DICER = (function (window, document) {
     for(i=0; i<players.length; i++) {
       var onePassed = false // this var for toogle of 1/once
 
-      console.log('------ BEFORE ------')
-      console.log(players[i]);
       for(var j=0; j<players[i].length; j++) {
         if(players[i][j].value === 1 && !onePassed && !players[i][j].additional) {
           players[i][j].remove = true
@@ -123,8 +121,6 @@ DICER = (function (window, document) {
           onePassed = true
         }
       }
-      console.log('------ AFTER ------')
-      console.log(players[i]);
     }
 
     checkTheWinner()
